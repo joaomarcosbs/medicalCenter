@@ -1,21 +1,22 @@
+* {
+    font-family: poppins;
+}
+
 body {
     margin: 0px;
     padding: 0px;
-    
 }
 
 header {
     display: flex;
     justify-content: center;
     height: 120px;
-    
 }
 
 .container {
     display: flex;
     justify-content: space-between;
     width: 70%;
-
 }
 
 .logo {
@@ -34,7 +35,6 @@ header {
 .menu {
     display: flex;
     align-items: center;
-    
 }
 
 nav ul, nav li {
@@ -58,8 +58,94 @@ nav .active a, nav a:hover {
 }
 
 #banner {
+    display: flex;
+    justify-content: center;
     background-image: url(/medClinic/assets/images/banner.jpg);
     background-position: center;
     background-size: cover;
     height: 670px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.banner_head {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_head h1 {
+    color: whitesmoke;
+    font-family: poppins;
+    font-size: 65px;
+    margin: 0px;
+    padding: 0px;
+    max-width: 400px;
+}
+
+.banner_head h2 {
+    color: whitesmoke;
+    font-family: poppins;
+    font-size: 25px;
+    margin: 0px;
+    margin-top: 30px;
+    padding: 0px;
+    max-width: 400px;
+}
+
+.banner_bottom {
+    height: 210px;
+    display: flex;
+}
+
+.section1, .section2, .section3 {
+    flex: 1;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+.section1 {
+    background-color: #39aae1;
+}
+
+.section2 {
+    background-color: #0079c7;
+}
+
+.section3 {
+    background-color: #2b4c99;
+}
+
+.section_title1, .section_title2, .section_title3 {
+    font-size: 25px;
+}
+
+.section_description1, .section_description2, .section_description3 {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section1 a, .section2 a {
+    text-decoration: none;
+    font-size: 12px;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    padding: 5px;
+}
+
+.section1 a:hover, .section2 a:hover {
+    background-color: whitesmoke;
+    color: rgb(0, 105, 157);
+}
+
+.hour {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid whitesmoke;
 }
