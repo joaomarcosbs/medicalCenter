@@ -2,6 +2,11 @@
     font-family: poppins;
 }
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -16,7 +21,7 @@ header {
 .container {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 80%;
 }
 
 .logo {
@@ -27,6 +32,7 @@ header {
 #logoName {
     margin-left: 20px;
     font-family: poppins;
+    font-weight: 600;
     font-size: 30px;
     color: rgb(0, 105, 157);
     text-decoration: none;
@@ -48,6 +54,7 @@ nav a {
     display: block;
     margin: 2px;
     padding: 15px;
+    
     font-family: poppins;
     text-decoration: none;
 }
@@ -84,6 +91,7 @@ nav .active a, nav a:hover {
     margin: 0px;
     padding: 0px;
     max-width: 400px;
+    padding-bottom: 0px;
 }
 
 .banner_head h2 {
@@ -260,5 +268,337 @@ article .news_description {
 }
 
 footer {
-    background-color: 1e1e1e;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_menu{
+    display: flex;
+    flex: 1;
+}
+
+.footer_menu a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.footerp1, .footerp2, .footerp3 {
+    flex: 1;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+.footerp1 {
+    background-color: #39aae1;
+}
+
+.footerp2 {
+    background-color: #0079c7;
+}
+
+.footerp3 {
+    background-color: #2b4c99;
+}
+
+.footer_bottom {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.footer_bottom1, .footer_bottom2, .footer_bottom3 {
+    flex: 1;
+    color: whitesmoke;
+}
+
+.footer_bottom_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.footer_bottom_title_text {
+    color: whitesmoke;
+    font-size: 21px;
+}
+
+.footer_bottom_title_bar {
+    width: 60px;
+    height: 3px;
+    background-color: #39aae1;
+    margin-top: 10px;
+}
+
+.footer_title {
+    font-size: 20px;
+}
+
+.footer_description {
+    font-size: 11px;
+}
+
+.footer_bottom_title_text {
+    font-size: 18px;
+}
+
+.inner_description div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    display: flex;
+    flex: 1;
+    color: gray;
+    margin-bottom: 2px;
+}
+
+.inner_description_text{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.inner_description_text_p2 {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer_bottom_description p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: gray;
+    text-align: justify;
+    margin-right: 20%;
+    margin-bottom: 30px;
+}
+
+#mailing {
+    color: whitesmoke;
+}
+
+.icons img {
+    display: flex;
+    max-width: 30px;
+    flex: 1;
+    margin-top: 30px;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.copyright {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 10px;
+    color: whitesmoke;
+    border-top: solid 1px whitesmoke;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .departaments {
+        margin-bottom: 20px;
+    }
+
+    .departaments img {
+        max-width: 190px;
+    }
+
+}
+
+@media screen and (max-width: 1450px) {
+    
+    .departaments {
+        margin-bottom: 20px;
+    }
+    
+    .departaments img {
+        max-width: 180px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    
+    #logoName {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    nav a {
+        padding: 10px;
+    }
+    
+    .departaments {
+        margin-bottom: 20px;
+    }
+    
+    .departaments img {
+        max-width: 170px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    
+    #logoName {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    .departaments {
+        margin-bottom: 20px;
+    }
+
+    .departaments img {
+        max-width: 165px;
+    }
+
+}
+
+@media screen and (max-width: 1250px) {
+
+    .departaments img {
+        max-width: 150px;
+    }
+
+}
+
+@media screen and (max-width: 1210px) {
+
+    #logoName {
+        font-size: 25px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 1125px) {
+
+    #logoName {
+        font-size: 23px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .departaments img {
+        max-width: 130px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    #logoName {
+        font-size: 22px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .logo {
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #banner {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .banner_head {
+        padding: 10%;
+    }
+
+    .banner_head h1 {
+        font-size: 50px;
+    }
+
+    .banner_head h2 {
+        font-size: 20px;
+    }
+
+    .banner_bottom {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    a article {
+        max-width: 700px;
+        margin: 0;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .widget_title {
+        padding-left: 50px;
+    }
+
+    .news_date {
+        padding-left: 0%;
+    }
+
+    .news_description {
+        text-align: justify;
+    }
+
+    .departaments img {
+        max-width: 200px;
+        margin-top: 50px;
+    }
+
+    .flex p {
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: justify;
+    }
+
+    .appointment {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .footer_menu {
+        flex-direction: column;
+        max-width: 100%;
+        text-align: center;
+        
+    }
+
+    .footer_bottom {
+        flex-direction: column;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
 }
