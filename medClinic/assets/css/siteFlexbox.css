@@ -24,6 +24,12 @@ header {
     width: 80%;
 }
 
+.mobile {
+    display: flex;
+    flex-direction: row;
+    justify-items: right; 
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -41,6 +47,7 @@ header {
 .menu {
     display: flex;
     align-items: center;
+
 }
 
 nav ul, nav li {
@@ -51,7 +58,7 @@ nav ul, nav li {
 }
 
 nav a {
-    display: block;
+    
     margin: 2px;
     padding: 15px;
     
@@ -392,6 +399,14 @@ footer {
     border-top: solid 1px whitesmoke;
 }
 
+.menu_mobile {
+    display: none;
+}
+
+.upper {
+    display: none;
+}
+
 @media screen and (max-width: 1500px) {
 
     .departaments {
@@ -511,13 +526,43 @@ footer {
         width: 100%;
     }
 
+    header {
+        height: auto;
+        flex-direction: row;
+    }
+    
     .logo {
         justify-content: center;
         padding-top: 15px;
     }
 
-    .menu {
+    .menu{
+        justify-content: center;
+        height: auto;
+    }
+
+    .menu_mobile {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+    .menu_mobile img {
+        max-height: 30px;
+        max-width: 30px;
+    }
+
+    .upper {
         display: none;
+    }
+
+    .menu nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        margin-top: 50px;
+        margin-bottom: 20px;
     }
 
     #banner {
@@ -584,6 +629,10 @@ footer {
         margin-top: 15px;
     }
 
+    .appointment img {
+        margin-right: 0px;
+    }
+
     .footer_menu {
         flex-direction: column;
         max-width: 100%;
@@ -600,5 +649,4 @@ footer {
     .copyright {
         text-align: center;
     }
-
 }
